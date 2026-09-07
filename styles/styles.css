@@ -1,0 +1,165 @@
+header {
+    background-color: #dd84b5;
+    color: rgb(204, 8, 73);
+    padding: 10px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #dd84b5;
+    color: rgb(12, 8, 9);
+    padding: 10px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e2bfd2;
+    color: rgb(0, 0, 0);
+}
+.foto {
+    width: 25%;
+    height: auto;
+}
+.fotocara {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.fotoportada {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.dondeencontrarlos {
+    text-align: center;
+}
+.dondeencontrarlos p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgb(3, 1, 2);
+    text-align: center;
+
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e70b84;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.barramenu {
+    background-color: #dd84b5;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+}
+.botonmenu {
+    flex: 1;
+    list-style-type: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+    list-style-type: none;
+}
+.botonmenu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #030303;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    background-color: #e70b84;
+    border-radius: 5px;
+}
+.piepagina {
+    text-align: center;
+    font-size: 12px;
+}
+.sinespacio {
+    margin: 0;
+    
+}
+@media (max-width: 600px) {
+.body {
+    background-color: #e2bfd2;
+    }
+    .barramenu {
+        flex-direction: column;
+    }
+}
+.recoproductos {
+    color:crimson;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Grilla y tarjetas de producto */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 100px;
+    margin: 20px 0 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tarjeta-producto {
+    background-color: rgb(238, 152, 169);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-producto .foto {
+    width: 180px;
+    height: 180px;
+    align-self: center;
+    object-fit: cover;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 0 0 12px 0;
+    display: block;
+}
+
+.tarjeta-producto h3 {
+    margin: 0 0 8px 0;
+    font-size: 17px;
+}
+
+.tarjeta-producto p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+}
+
+.tarjeta-producto p:last-child {
+    margin-bottom: 0;
+}
